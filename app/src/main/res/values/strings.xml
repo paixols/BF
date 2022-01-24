@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">BFMap</string>
+
+    <!--Map Types for Menu-->
+    <string name="action_satellite">Satellite</string>
+    <string name="action_terrain">Terrain</string>
+    <string name="action_atlas">Default</string>
+
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">BF</string>
+    <string name="second_fragment_label">Order</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="no_marker">First select the location to request fuel</string>
+
+    <!--Google Map Cloud - Custom Atlas -->
+    <string name="bf_map_id">8c814c14537faac5</string>
+
+    <!--UI Elements-->
+    <string name="request_fuel">Request Fuel</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="regular_fuel">Regular 87</string>
+    <string name="premium_fuel">Premium 91</string>
+    <string name="regular_fuel_price">$2.40</string>
+    <string name="premium_fuel_price">$2.80</string>
+    <string name="marker_snippet">Where fuel will be delivered</string>
+    <string name="marker_car_parked">Car Parked</string>
+    <string name="time_selection_morning">Morning</string>
+    <string name="time_selection_afternoon">Afternoon</string>
+    <string name="select_delivery_time_window">Select delivery time window</string>
+    <string name="select_payment_method">Select payment method</string>
+    <string name="order_boost">Order Boost</string>
+    <string name="error_order_validation">Make sure you selected a delivery window and payment method</string>
+    <string name="payment_method"> Card Number: %1$s \n Expiration Date: %2$s \n Processor: %3$s</string>
+    <string name="cancel">Cancel</string>
+    <string name="confirmation">Confirmation</string>
+    <string name="confirmation_page">Confirmation Page</string>
+    <string name="confirmation_info">Info</string>
+    <string name="order_confirmation">Order Confirmation</string>
+</resources>

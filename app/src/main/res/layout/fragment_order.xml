@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.bf.bfmap.order.OrderViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".order.OrderFragment">
+
+        <!--Time Selection-->
+        <TextView
+            android:id="@+id/tv_time_legend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fab_margin"
+            android:text="@string/select_delivery_time_window"
+            android:textStyle="italic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RadioGroup
+            android:id="@+id/rg_time_selection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fab_margin"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_time_legend">
+
+            <RadioButton
+                android:id="@+id/rb_time_morning"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/purple_700"
+                android:checked="true"
+                android:text="@string/time_selection_morning"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/rb_time_afternoon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/purple_700"
+                android:checked="false"
+                android:text="@string/time_selection_afternoon"
+                android:textStyle="bold" />
+
+        </RadioGroup>
+
+        <!--Payment-->
+        <TextView
+            android:id="@+id/tv_payment_legend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fab_margin"
+            android:text="@string/select_payment_method"
+            android:textStyle="italic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rg_time_selection" />
+
+        <RadioButton
+            android:id="@+id/rb_payment_method"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fab_margin"
+            android:buttonTint="@color/purple_700"
+            android:checked="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_payment_legend" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_order"
+            style="@style/Widget.App.NextButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fab_margin"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/order_boost"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rb_payment_method" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
